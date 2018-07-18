@@ -1,0 +1,8 @@
+<view class='container'>
+  <view wx:if='{{currnews.data.pic.length > 0}}' class='pic'><image mode='aspectFit' src='{{currnews.data.pic}}'></image></view>
+  <view class='title'>{{currnews.data.title}}</view>
+  <view class='content'>{{news}}</view>
+  <view class='time'>时间：{{currnews.data.time}}</view>
+  <view class='src'>来源：{{currnews.data.src}}</view>
+  <view class='url'></view>
+</view>

@@ -1,0 +1,34 @@
+/* news.wxss */
+.container {
+  padding-top: 80rpx;
+  margin: 0px;
+  min-height: 100vh;
+  width: 100vw;
+}
+.title {
+  width: 100vw;
+  font-size: 54rpx;
+  text-align: center;
+}
+.content {
+  padding: 10rpx 20rpx;
+  box-sizing: border-box;
+}
+.time {
+  box-sizing: border-box;  
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  padding: 10rpx;
+  font-size: 28rpx;
+  color: #afafaf;
+}
+.src {
+  box-sizing: border-box;  
+  position: absolute;
+  top: 0rpx;
+  right: 0rpx;
+  padding: 10rpx;
+  font-size: 28rpx;
+  color: #afafaf;
+}

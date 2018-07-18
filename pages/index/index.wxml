@@ -1,0 +1,21 @@
+<view class='container'>
+  <scroll-view scroll-x class='channels'>
+    <view class='channel' wx:for='{{channels}}' wx:key=''>
+      <view bindtap='changeChannel' data-currIndex='{{currChannelIndex}}' data-index='{{index}}' class='channel-item {{ currChannelIndex == index ? "channel-selected":""}}'>{{item}}</view>
+    </view>
+  </scroll-view>
+  <view class='news'>
+    <view class='news-item' wx:for='{{news}}' wx:for-item='news' wx:key='{{index}}' bindtap='chackNews' data-index='{{index}}'>
+      <view class='news-item-aside'>
+        <image wx:if='{{news.pic.length > 0}}' lazy-load='true' mode='aspectFill' class='news-item-pic' alt="暂无预览图" src='{{news.pic}}'></image>
+        <image wx:if='{{news.pic.length <= 0}}' lazy-load='true' mode='' class='news-item-pic' alt="暂无预览图" src='/images/nophoto.png'></image>
+      </view>
+      <view class='news-item-main'>
+        <view class='news-item-title'>{{news.title}}</view>
+        <view class='news-item-time'>{{news.time}}</view>
+        <view class='news-item-src'>{{news.src}}</view>
+        <view class='news-item-category'></view>
+      </view>
+    </view>
+  </view>
+</view>

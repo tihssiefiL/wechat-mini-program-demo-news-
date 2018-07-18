@@ -1,0 +1,140 @@
+.container {
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 0rpx;
+  margin: 0rpx;
+  position: relative;
+}
+
+.channels {
+  background-color: #fff;
+  position: fixed;
+  top: 0rpx;
+  left: 0rpx;
+  width: 100vw;
+  height: 90rpx;
+  box-sizing: border-box;
+  padding: 0rpx;
+  margin: 0rpx;
+  white-space: nowrap;
+  border-bottom: #ededed 1rpx solid;
+  z-index: 999;
+}
+
+.channel {
+  width: 140rpx;
+  height: 100%;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.channel-item {
+  /* border-right: 1rpx solid #EDEDED; */
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40rpx;
+}
+
+.channel-selected {
+  box-sizing: border-box;
+  border: solid #ededed 1rpx;
+  color: #4aa4fc;
+  box-shadow: 5rpx 5rpx 5rpx #888;
+}
+
+.news {
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding-top: 90rpx;
+  margin: 0rpx;
+  position: relative;
+}
+
+/* <view class='news'>
+    <view class='news-item' wx:for='{{news}}' wx:for-item='news' wx:key='{{index}}'>
+      <view class='news-item-main'>
+        <view class='news-item-title'>{{news.title}}</view>
+        <view class='news-item-time'></view>
+        <view class='news-item-src'></view>
+        <view class='news-item-category'></view>
+      </view>
+      <view class='news-item-aside'>
+        <image class='news-item-pic' src=''></image>
+      </view>
+    </view>
+  </view> */
+
+.news-item {
+  position: relative;
+  height: 180rpx;
+  width: 100vw;
+  box-sizing: border-box;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.news-item-main {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  box-sizing: border-box;
+  height: 180rpx;
+  width: 570rpx;
+}
+
+.news-item-aside {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  box-sizing: border-box;
+  height: 180rpx;
+  width: 180rpx;
+}
+
+.news-item-time {
+  box-sizing: border-box;  
+  position: absolute;
+  bottom: 0rpx;
+  left: 0rpx;
+  padding: 10rpx;  
+  font-size: 20rpx;
+  color: #afafaf;
+}
+
+.news-item-pic {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0rpx;
+  left: 0rpx;
+  padding: 10rpx;
+  height: 100%;
+  width: 100%;
+}
+
+.news-item-title {
+  box-sizing: border-box;  
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  padding: 10rpx;
+  height: 140rpx;
+  overflow: hidden;
+  font-size: 34rpx;
+}
+
+.news-item-src {
+  box-sizing: border-box;  
+  position: absolute;
+  bottom: 0rpx;
+  right: 0rpx;
+  padding: 10rpx;
+  font-size: 20rpx;
+  color: #afafaf;
+}
